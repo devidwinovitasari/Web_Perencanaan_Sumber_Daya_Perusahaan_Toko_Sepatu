@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+body {
+    background-size : cover;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#6eb400;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+
+.heading span{
+    color: var(--pink);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: var(--pink);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #e0dcdc;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem tgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: black;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: var(--pink);
+}
+
+img{
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+
+    opacity: 0; /* Awalnya atur opacity ke 0 agar tidak terlihat */
+    animation: slideFromTop 1s ease forwards, fadeIn 1s ease forwards; /* Gunakan animasi slideFromTop */
+
+}
+
+.profile-info {
+    padding-top: 100px;
+    margin-left: 20px;
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    color: #fefdfd; 
+
+    opacity: 0; 
+    animation: fadeIn 1s ease forwards 1.0s;
+}
+
+.profile-info h2 {
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+.profile-info p {
+    margin: 0; 
+    padding-bottom: 10px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+
+    opacity: 0; /* Awalnya atur opacity ke 0 agar tidak terlihat */
+    animation: slideFromBottom 1s ease forwards; 
+
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    width: 700px;
+    height: 280px;
+}
+
+label{
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+input{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+button{
+    background-color: #000000;
+    color: #e0dcdc;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;
+    height: 33px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #6eb400;
+    color: #000000;
+    border-radius: 30px;
+}
+/*  animasi profil dan info profil*/
+
+@keyframes slideFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* animasi colom */
+
+@keyframes slideFromBottom {
+    0% {
+        opacity: 0; /* Mulai dengan opacity 0 */
+        transform: translateY(50px); /* Pindahkan elemen ke bawah */
+    }
+    100% {
+        opacity: 1; /* Berakhir dengan opacity 1 */
+        transform: translateY(0); /* Kembali ke posisi awal */
+    }
+}
