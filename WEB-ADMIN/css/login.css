@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', serif;
+}
+
+body {
+    background-size : cover;
+    background-color: #DBE9FA;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: auto;
+    background:#E0E5E5;  
+    border-radius: 10px;
+    padding: 30px;
+    align-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+h2{
+    font-size: 2em;
+    color: black; /* Warna teks */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inputbox{
+    position: relative;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.inputbox label{
+    color: black; /* Warna teks label */
+    font-size: 1em;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 40px;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.inputbox ion-icon{
+    position: absolute;
+    right: 10px;
+    color:black ; /* Warna ikon */
+    font-size: 1.2em;
+    top: 10px;
+}
+
+.forget{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.forget a{
+    color:rgb(48, 5, 201); /* Warna teks link */
+    text-decoration: none;
+}
+
+.forget a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background: rgb(90, 45, 252) ;/* Warna tombol */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff; /* Warna teks tombol */
+}
+
+button:hover{
+    background: rgb(48, 5, 201); /* Warna tombol saat hover */
+}
+
+.register{
+    font-size: .9em;
+    color: black; /* Warna teks */
+    text-align: center;
+}
+
+.register p a{
+    color: rgb(48, 5, 201); /* Warna teks link */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
